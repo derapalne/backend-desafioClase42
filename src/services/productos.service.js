@@ -1,15 +1,14 @@
-import ProductosRepo from "../repositories/index.js"
-const repo = ProductosRepo;
+import ProductosRepo from "../repositories/index.js";
+const repo = await new ProductosRepo();
 export class ProductosService {
-
     constructor() {}
 
     async add(prod) {
-    return await repo.add(prod);
+        return await repo.add(prod);
     }
 
     async getAll() {
-    return await repo.getAll();
+        return await repo.getAll();
     }
 
     async getById(id) {

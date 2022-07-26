@@ -1,5 +1,5 @@
 import ProductosService from "../services/index.js";
-const service = ProductosService;
+const service = new ProductosService();
 
 const getProdId = async (req, res) => {
     let respuesta = null;
@@ -15,7 +15,8 @@ const getProdId = async (req, res) => {
 };
 const postProd = async (req, res) => {
     const prod = req.body.prod;
-    const respuesta = await service.save(prod);
+    console.log(prod);
+    const respuesta = await service.add(prod);
     console.log(respuesta);
     res.status(200).json(respuesta);
 };
