@@ -2,6 +2,12 @@
 
 Aplicación Backend con un CRUD simple.
 
+Comandos de testeo:
+
+    npm run dev => levantar el servidor
+    npm run test-axios => test con Axios
+    npm run test => test con Mocha-Chai
+
 Rutas:
 
 GET /api/prod/:id? => Si se inserta ID, se trae el producto especificado, caso contrario se traen todos.
