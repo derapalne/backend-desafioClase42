@@ -8,7 +8,6 @@ import { config } from "../utils/index.js";
         });
         const productoId = postProducto.data;
         const getProductos = await axios.get(`http://localhost:${config.PORT}/api/prod`);
-        console.log("HOLAAAA", productoId);
         const getProductoId = await axios.get(
             `http://localhost:${config.PORT}/api/prod/${productoId}`
         );

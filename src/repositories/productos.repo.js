@@ -43,4 +43,8 @@ export default class ProductosRepo {
     async deleteById(id) {
         return this.dao.deleteById(id);
     }
+
+    async deleteAll() {
+        return this.dao.deleteAll();
+    }
 }

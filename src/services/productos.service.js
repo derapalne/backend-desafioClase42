@@ -22,4 +22,8 @@ export class ProductosService {
     async deleteById(id) {
         return await repo.deleteById(id);
     }
+
+    async deleteAll() {
+        return await repo.deleteAll();
+    }
 }

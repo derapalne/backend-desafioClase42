@@ -77,6 +77,7 @@ class ProductosDao {
                     response = dataResp;
                 })
                 .catch((e) => console.log(e));
+                console.log("RESPUESTA PUT DAO: ", response);
             return response;
         } catch (error) {
             console.log(error);
